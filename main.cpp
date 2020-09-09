@@ -9,7 +9,7 @@ int main() {
     int x,b;
     bool n,m,k,l;
     unsigned int a;
-    unsigned short int c,d,e,f;
+    unsigned short int c,d,e,f,w;
     cin >> x;
     cin >> a;
     cin >> n;
@@ -21,10 +21,11 @@ int main() {
     cin >> d;
     cin >> c;
     cin >> f;
+    w=((~e)|d&(c^f));
     cout << std::setprecision(1)<< x*x+3*x*x*x-2 <<std::endl;
     cout << std::setprecision(3)<<5*abs(a)-std::sqrt(3*a+1) <<std::endl;
     cout << std::boolalpha << ((!n)||(m!=k)&&(!l)) << std::endl ;
-    cout << (std::pow(2,b)) << std::oct<<(std::pow(2,b))<<std::endl;
-    cout << std::setw(5)<< std::showbase <<std::hex<< std::setfill('0')<<((~e|d&(c!=f)))<<std::internal ;
+    cout << (std::pow(2,b)) << ' ' << std::oct<<(std::pow(2,b))<<std::endl;
+    cout <<  std::showbase<< std::internal <<std::hex<< std::setw(6)<< std::setfill('0')<<w<< std::endl ;
     return 0;
 }
