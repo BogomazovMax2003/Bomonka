@@ -22,7 +22,7 @@ int main() {
     cin >> c;
     cin >> f;
     w=((~e)|d&(c^f));
-    cout << std::setprecision(1)<< x*x+3*x*x*x-2 <<std::endl;
+    cout << std::setprecision(1)<< x*x+3*x*x*x-2 << showpos<<std::endl;
     cout << std::setprecision(3)<<5*abs(a)-std::sqrt(3*a+1) <<std::endl;
     cout << std::boolalpha << ((!n)||(m!=k)&&(!l)) << std::endl ;
     cout << (std::pow(2,b)) << ' ' << std::oct<<(std::pow(2,b))<<std::endl;
